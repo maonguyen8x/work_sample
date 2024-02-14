@@ -1,3 +1,5 @@
+<!--  1-b. Write unit tests that examines the functionality of the implementation.-->
+
 <?php
 // File: PalindromeTest.php
 use PHPUnit\Framework\TestCase;

@@ -4,7 +4,7 @@ Method should take a string as an argument, and should return a boolean value.
 -->
 
 <?php
-  function isPalindrome($str) {
+  public function isPalindrome($str) {
 	  // Remove non-alphanumeric characters and convert to lowercase
 	  $str = preg_replace("/[^A-Za-z0-9]/", '', strtolower($str));
 	  
