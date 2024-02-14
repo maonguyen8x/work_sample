@@ -1,4 +1,4 @@
-<!-- 1-c. Calculate the time cost of your implementation using the O-notation.-->
+<!-- 1-c. Calculate the time cost of your implementation using the O-notation. -->
 <?php
     require_once 'Palindrome.php';
     class CalculateTimeCost
