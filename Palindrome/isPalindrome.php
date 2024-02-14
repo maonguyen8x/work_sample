@@ -19,10 +19,14 @@ Method should take a string as an argument, and should return a boolean value.
 	$string1 = "Able was I ere I saw Elba!";
 	$string2 = "hello";
 	$string3 = "Was it a car or a cat I saw?";
+	$string4 = "Madam, in Eden I'm Adam";
+	$string5 = "Racecar";
 	
 	echo "Is \"$string1\" a palindrome? " . (isPalindrome($string1) ? "Yes" : "No") . "\n";
 	echo "Is \"$string2\" a palindrome? " . (isPalindrome($string2) ? "Yes" : "No") . "\n";
 	echo "Is \"$string3\" a palindrome? " . (isPalindrome($string3) ? "Yes" : "No") . "\n";
+	echo "Is \"$string4\" a palindrome? " . (isPalindrome($string4) ? "Yes" : "No") . "\n";
+	echo "Is \"$string5\" a palindrome? " . (isPalindrome($string5) ? "Yes" : "No") . "\n";
 
 ?>
 
