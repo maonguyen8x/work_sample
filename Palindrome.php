@@ -12,15 +12,17 @@ Method should take a string as an argument, and should return a boolean value.
 	  $reversedStr = strrev($str);
 	  
 	    // Check if the original and reversed strings are the same
-	  return $str === $reversedStr;
+	  return ($str === $reversedStr) ? true : false;
 	}
 
 	// Test the function
 	$string1 = "Able was I ere I saw Elba!";
 	$string2 = "hello";
+	$string3 = "Was it a car or a cat I saw?";
 	
 	echo "Is \"$string1\" a palindrome? " . (isPalindrome($string1) ? "Yes" : "No") . "\n";
 	echo "Is \"$string2\" a palindrome? " . (isPalindrome($string2) ? "Yes" : "No") . "\n";
+	echo "Is \"$string3\" a palindrome? " . (isPalindrome($string3) ? "Yes" : "No") . "\n";
 
 ?>
 
