@@ -1,6 +1,6 @@
 <!-- 1-c. Calculate the time cost of your implementation using the O-notation.-->
 <?php
-    require_once 'isPalindrome.php';
+    require_once 'Palindrome.php';
     class CalculateTimeCost
     {
         // Function to measure the time taken by the isPalindrome() function for inputs of different sizes
@@ -12,7 +12,7 @@
             foreach ($inputSizes as $size) {
                 $input = self::generateRandomString($size); // Generate a random string of given size
                 $startTime = microtime(true); // Start time
-                isPalindrome::isPalindrome($input); // Call the isPalindrome() function
+                Palindrome::isPalindrome($input); // Call the isPalindrome() function
                 $endTime = microtime(true); // End time
                 $timeTaken = $endTime - $startTime; // Time taken
                 echo "Time taken for input size $size: $timeTaken seconds\n";
@@ -33,5 +33,6 @@
         // echo measureTime();
     }
     // Measure and display time for different input sizes
-    CalculateTimeCost::measureTime();
+    $calculateTimeCost = new CalculateTimeCost();
+    echo $calculateTimeCost -> measureTime();
 ?>

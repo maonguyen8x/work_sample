@@ -13,7 +13,7 @@ Method should take a string as an argument, and should return a boolean value.
 			$reversedStr = strrev($str);
 			
 				// Check if the original and reversed strings are the same
-			return ($str === $reversedStr) ? true : false;
+			return $str === $reversedStr;
 		}
 
 		// Test the function

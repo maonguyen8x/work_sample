@@ -1,28 +1,27 @@
 <!--  1-b. Write unit tests that examines the functionality of the implementation.-->
 
 <?php
-// File: PalindromeTest.php
-use PHPUnit\Framework\TestCase;
-require_once 'isPalindrome.php'; // Include the file with the function to be tested
+    // File: PalindromeTest.php
+    use PHPUnit\Framework\TestCase;
+    require_once 'Palindrome.php'; // Include the file with the function to be tested
 
   class PalindromeTest extends TestCase {
       public function testPalindrome() {
-        $palindrome = new Palindrome();
           // Test with a classic palindrome
-          $this->assertTrue(isPalindrome("Able was I ere I saw Elba"));
+          $this->assertTrue(Palindrome::isPalindrome("Able was I ere I saw Elba"));
 
           // Test with another classic palindrome
-          $this->assertTrue(isPalindrome("Racecar"));
+          $this->assertTrue(Palindrome::isPalindrome("Racecar"));
 
           // Test with a palindrome containing punctuation
-          $this->assertTrue(isPalindrome("Was it a car or a cat I saw?"));
+          $this->assertTrue(Palindrome::isPalindrome("Was it a car or a cat I saw?"));
 
           // Test with a longer palindrome containing punctuation
-          $this->assertTrue(isPalindrome("Madam, in Eden I'm Adam"));
+          $this->assertTrue(Palindrome::isPalindrome("Madam, in Eden I'm Adam"));
 
           // Test with a non-palindrome
-          $this->assertFalse(isPalindrome("hello"));
-          $this->assertTrue(isPalindrome("Able was I ere I saw Elba"));
+          $this->assertFalse(Palindrome::isPalindrome("hello"));
+          $this->assertTrue(Palindrome::isPalindrome("Able was I ere I saw Elba"));
       }
   }
 
