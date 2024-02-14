@@ -7,6 +7,7 @@ require_once 'isPalindrome.php'; // Include the file with the function to be tes
 
   class PalindromeTest extends TestCase {
       public function testPalindrome() {
+        $palindrome = new Palindrome();
           // Test with a classic palindrome
           $this->assertTrue(isPalindrome("Able was I ere I saw Elba"));
 
